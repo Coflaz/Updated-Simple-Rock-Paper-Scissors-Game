@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./rock-paper-scissors.css">
+</head>
+<body>
+    <p class="title">Rock Paper Scissors</p>
+    <p>
+        <button class="rock move-button" onclick="
+            playerChoice = 'rock';
+            computerChoice = computerPlay();
+            result = winLoseTie(playerChoice, computerChoice);
+            gameResultChange(result);
+            gameSituationChange(playerChoice, computerChoice);
+            scoreTableChange();
+        "><img src="./rock.png" class="move-icon"></button>
+
+        <button class="paper move-button" onclick="
+            playerChoice = 'paper';
+            computerChoice = computerPlay();
+            result = winLoseTie(playerChoice, computerChoice);
+            gameResultChange(result);
+            gameSituationChange(playerChoice, computerChoice);
+            scoreTableChange();
+        "><img src="./paper.png" class="move-icon"></button>
+
+        <button class="scissors move-button" onclick="
+            playerChoice = 'scissors';
+            computerChoice = computerPlay();
+            result = winLoseTie(playerChoice, computerChoice);
+            gameResultChange(result);
+            gameSituationChange(playerChoice, computerChoice);
+            scoreTableChange();
+        "><img src="./scissors.png" class="move-icon"></button>
+    </p>
+
+    <p class="score-table css-paragraph-element"></p>
+    <p class="game-result css-paragraph-element"></p>
+    <p class="css-paragraph-element">
+        Player: <img src="" class="game-situation-player">
+        <br>
+        <br>
+        Computer: <img src="" class="game-situation-computer">
+    </p>
+    <p>
+        <button onclick="resetScores();" class="css-operational-button">Reset Scores</button>
+        <button onclick="saveScores();" class="css-operational-button">Save Scores</button>
+        <button onclick="continueGame();" class="css-operational-button">Continue Previous Game</button>
+    </p>
+    <p class="game-saved-continues"></p>
+    
+    <script src="./rock-paper-scissors.js"></script>
+</body>
+</html>

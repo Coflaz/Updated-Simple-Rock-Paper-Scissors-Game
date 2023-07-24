@@ -1,0 +1,54 @@
+body {
+    background-color: #393E46;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EEEEEE;
+}
+
+.move-icon {
+    height: 70px;
+}
+
+.game-situation-player {
+    height: 30px;
+}
+
+.game-situation-computer {
+    height: 30px;
+}
+
+.move-button {
+    background-color: #222831;
+    border: 5px solid #D65A31;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.css-operational-button {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #222831;
+    border: 3px solid #D65A31;
+    border-radius: 10px;
+    padding: 10px;
+    color: #EEEEEE;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.css-paragraph-element {
+    font-size: 20px;
+}
